@@ -8,24 +8,23 @@
 while True:
     while True:
         symbol = input('введите знак: ')
-        if symbol == ('0' or '+') or ('-' or '/'):
+        if symbol == '0' or symbol == '+' or symbol == '-' or symbol == '/':
             break
-        elif symbol != '0' or '+' or '-' or '/':
+        else:
             print('введен неверный знак, используйте 0 + - /')
 
-    if symbol == '0' or '+' or '-' or '/':
-        if symbol == '0':
-            print('Завершение программы')
-            break
+    if symbol == '0':
+        print('Завершение программы')
+        break
 
     a = int(input('введите число: '))
 
     while True:
         b = int(input('введите число: '))
-        if b != 0:
-            break
-        else:
+        if b == 0 and symbol== '/':
             print('не делим на ноль')
+        else:
+            break
 
     if symbol == '+':
         print(a + b)
