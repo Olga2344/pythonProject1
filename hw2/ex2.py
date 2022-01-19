@@ -10,7 +10,7 @@ while number>0:
         count_even+=1
     else:
         count_odd+=1
-    print(num_1)
+    # print(num_1)
     number=number//10
 print(f'количество четных чисел {count_even} и нечетных {count_odd}')
 
