@@ -8,6 +8,9 @@ random_nam = randint(0, 100)
 count_round = 0
 
 while True:
+    if count_round == 10:
+        print(f'количеество попыток закончилось. загаданное число было = {random_nam}')
+        break
     input_num = int(input(f'число от 0 до 100, у вас есть {10 - count_round} попыток: '))
     if random_nam == input_num:
         print('win!')
@@ -18,6 +21,4 @@ while True:
     else:
         print('загаданное число больше')
         count_round += 1
-    if count_round == 10:
-        print(f'количеество попыток закончилось. загаданное число было = {random_nam}')
-        break
+
