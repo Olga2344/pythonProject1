@@ -22,3 +22,5 @@ for k, v in frequency_list.items():
         print(f'чаще всего в массиве встречается число "{k}": {v} раз.')
 print(num_list)
 print(frequency_list)
+
+
