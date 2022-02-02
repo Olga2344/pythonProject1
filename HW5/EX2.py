@@ -43,8 +43,10 @@ print(n1)
 print(n2)
 
 hex_sum=n1+n2
+hex_mult=n1*n2
 
 print(transfer_to_16(hex_sum))
+print(transfer_to_16(hex_mult))
 
 
 
